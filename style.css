@@ -7,6 +7,8 @@
   }
 
   body{
+    background-image: url(img/travel2.jpg);
+    background-size: cover; 
     display: flex;
     background-color: #f6f5f7;
     justify-content: center;
@@ -38,7 +40,7 @@
     font-weight: 800;
     line-height: 20px;
     letter-spacing: 0.5px;
-    margin: 0;
+    margin: 20px 0 30px;
     text-shadow: 0 0px 10px  rgba(16, 64, 74, 0.5); 
   }
 
@@ -61,10 +63,10 @@
 
   .content{
     display: flex;
-    width: 100px;
+    width: 100%;
     height: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around ;
   }
 
   .content .checkbox{
@@ -81,7 +83,7 @@
 
   .content label{
     font-size: 14px;
-    user-select: none;
+    user-select:none;
     padding-left: 5px;
   } 
 
@@ -115,7 +117,7 @@
     button.ghost{
       background-color: rgba(225, 225, 225, 0.2);
       border: 2px solid #fff;
-      color: #fff 
+      color: #1a074f 
     }
 
     button.ghost i{
@@ -232,7 +234,7 @@
       z-index: 100;
     }
 
-    .container.container-right-panel-active .overlay-container{
+    .container.right-panel-active .overlay-container{
       transform: translate(-100%);
     }
 
@@ -240,7 +242,7 @@
       background-image: url('img/travel.jpg');
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 0 0%;
+      background-position: 0 0;
       color: #fff;
       position: relative;
       left: -100%;
@@ -264,7 +266,7 @@
       );
     }
 
-    .container-right-panel-active .overlay{
+    .container.right-panel-active .overlay{
       transform: translateX(50%);
     }
 
@@ -287,15 +289,15 @@
       transform: translateX(-20%);
     }
     
-    .container-right-panel-active .overlay-left{
-      transform: translateX(-20%);
+    .container.right-panel-active .overlay-left{
+      transform: translateX(0%);
     }
     .overlay-right{
       right: 0;
       transform: translateX(0);
     }
     
-    .container-right-panel-active .overlay-right{
+    .container.right-panel-active .overlay-right{
       transform: translateX(20%);
     }
 
